@@ -14,11 +14,14 @@ There are a few things you'll need to be able to leverage aadRoleSync;
 - AAD Connect - you must sync your on-prem AD into Azure AD
 - An Azure Subscription - aadRoleSync runs as an Azure FUnction, you'll need an Azure subscription
 ## Setup Requirements
-- You'll need a Global Admin account for setup - this is only needed to carry out setup actions, you'll delegate rights to a Service Princple that aadRoleSync will use, aadRoleSYnc does not require Global Admin rights itself.
+- You'll need a Global Admin account for setup - this is ONLY needed to carry out the setup steps that follow, you'll delegate some Graph API rights to a Service Princpal that aadRoleSync will use on an ongoing basis, aadRoleSync does not require Global Admin rights itself.
 - Permission to create on-prem AD groups
-- Rights to setup and deploy to an Azure Function App
+- Rights to setup and deploy to an Azure Function App, Azure Storage, Azure Key Vault.
 - Azure AD Preview PowerShell Module
 - Az PowerShell Module
+
+# aadRoleSync Overview
+
 
 # Getting Started
 ### 1.  Clone the Repo!
